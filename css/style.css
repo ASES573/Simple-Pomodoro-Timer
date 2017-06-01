@@ -1,0 +1,17 @@
+body
+{
+
+	background:#e1ebe5;
+	background-size: 100%;
+	background-attachment: fixed;
+	color: white;
+	font-family: cursive;
+}
+h4
+{
+	display: inline;
+}
+#start
+{
+	margin: 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Clock</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <audio id="buzzer" src="http://codingtutorials360.com/14244764.mp3" type="audio/mpeg"></audio>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pomodoro Timer</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+      
+    </nav>
+    <div class="text-center">
+        <h2> Pomodoro Clock </h2>
+      <div id="timediv">
+        <h3 id="title1">SESSION TIME</h3>
+          <a href="#" class="btn btn-primary" id="minusFiveSession">-</a>
+          <h4 id="timeType"></h4>
+          <h4 id="num">25</h4>
+          <a href="#" class="btn btn-primary" id="plusFiveSession">+</a>
+          <a href="#" class="btn btn-success" id="reset">RESET</a>
+      </div>
+      <div id="breakdiv">
+        <h3 id="title1">BREAK</h3>
+          <a href="#" class="btn btn-primary" id="minusFiveBreak">-</a>
+          <h4 id="breaknum">25</h4>
+          <a href="#" class="btn btn-primary" id="plusFiveBreak">+</a>
+          <a href="#" class="btn btn-success" id="start">START</a>
+      </div>    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.js"  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/scripts.js"></script>
+   
+  </body>
+</html>
