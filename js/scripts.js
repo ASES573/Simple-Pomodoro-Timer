@@ -20,6 +20,7 @@ $(document).ready(function ()
                 buzzer.play();
                 clearInterval(counter);
                 var startBreak = setInterval(breakTimer, 1000);
+                breakTime*=60;
                 $("#num").hide();
             }
             if(count%60>=10)
@@ -33,17 +34,19 @@ $(document).ready(function ()
 
             function breakTimer()
             {
+                
                 $("#timeType").html("Break :");
                 $("#breaknum").show();
-                breakTime *=60;
-                breakTime -= 1;
+                
+                $("#timeType").show();
+                breakTime-= 1;
                 if (breakTime === 0)
                 {
                     clearInterval(startBreak);
                     buzzer.play();
                     $("#reset").show();
                 }
-                  if(breakTime%60>=10)
+            if(breakTime%60>=10)
             {
                 $("#breaknum").html(Math.floor(breakTime/60)+":"+breakTime%60);
             }
